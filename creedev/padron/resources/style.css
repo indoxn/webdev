@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Lato", "Arial", sans-serif;
+}
+
+html {
+  background-color: #fff;
+  color: #555555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  word-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  left: 25%;
+}
+
+.logo {
+  margin: 20px auto 20px auto;
+  height: auto;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+h3 {
+  margin: 20px 0 5px 0;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+
+/*===============================================*/
+
+
+/*======== FORMS =========*/
+
+
+/*===============================================*/
+
+input[type="text"] {
+  width: 40%;
+  padding: 6px 12px;
+  margin: 12px 0;
+  box-sizing: border-box;
+  border: 1px solid #b5b5b5;
+  border-radius: 2px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+  background-color: #ecf0f1;
+}
+
+input[type="submit"] {
+  box-sizing: border-box;
+  padding: 6px 12px;
+  margin: 12px 0;
+  border: 1px solid #b5b5b5;
+  border-radius: 2px;
+  background-color: #ecf0f1;
+}
+
+input[type="submit"]:hover {
+  background-color: #b5b5b5;
+}
+
+
+/*========================================================================================*/
+
+
+/*===== BUTTONS (search.php)======*/
+
+
+/*========================================================================================*/
+
+.button {
+  position: fixed;
+  top: 5px;
+  right: 0;
+  width: 200px;
+  height: auto;
+  padding: 6px 12px;
+  border-radius: 2px;
+  border: 1px solid #b5b5b5;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#button-back {
+  background-color: #ecf0f1;
+}
+
+#button-back:hover {
+  background-color: #b5b5b5;
+}
+
+.button a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+#button-total {
+  top: 40px;
+  font-weight: 600;
+  background-color: white;
+}
+
+#button-total:hover {
+  background-color: #ecf0f1;
+}
+
+#button-export {
+  top: 75px;
+  width: 75px;
+  background-color: #2ecc71;
+  color: white;
+}
+
+#button-export:hover {
+  background-color: #27ae60;
+}
+
+.logout {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 6px 12px;
+  text-align: center;
+  width: 100px;
+  height: auto;
+  border: 1px solid #b5b5b5;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: #34495e;
+}
+
+.logout:hover {
+  background-color: #2c3e50;
+}
+
+.logout a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/*========================================================================================*/
+
+
+/*===== Error messages (search.php)======*/
+
+
+/*========================================================================================*/
+
+.error {
+  top: 15px;
+  left: 50px;
+  position: fixed;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+/*========================================================================================*/
+
+
+/*===== Results table goes here (search.php)======*/
+
+
+/*========================================================================================*/
+
+table {
+  width: 80%;
+  max-width: 960px;
+}
+
+table,
+td,
+th {
+  margin: auto;
+  margin-top: 80px;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+  font-weight: 500;
+}
+
+#results td:first-child {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+#results tr:hover {
+  background-color: #bdc3c7;
+}
+
+th {
+  background-color: #1abc9c;
+  color: white;
+  padding: 5px;
+}

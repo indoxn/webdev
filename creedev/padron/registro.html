@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//www.fuelcdn.com/fuelux/3.13.0/css/fuelux.min.css" rel="stylesheet">
+  <link href="resources/etc.css" rel="stylesheet" type="text/css">
+  <!-- jQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="//www.fuelcdn.com/fuelux/3.13.0/js/fuelux.min.js"></script>
+  <title>Padron | Registro</title>
+</head>
+
+<body class="fuelux">
+  <form class="form-horizontal" method="post" action="./includes/insert.php">
+    <fieldset>
+      <!-- change col-sm-N to reflect how you would like your column spacing (http://getbootstrap.com/css/#forms-control-sizes) -->
+      <!-- Form Name -->
+      <legend>Registro de expedientes</legend>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="expediente" class="control-label col-sm-2">Expediente</label>
+        <div class="col-md-2">
+          <input type="text" class="form-control" id="expediente" placeholder="Número de expediente" required="">
+          <p class="help-block">Ej: 0001/17; 0054/16; 0189/15; 2156/13</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="fcaptura" class="control-label col-sm-2">Fecha de Captura</label>
+        <div class="col-md-2">
+          <input type="date" class="form-control" id="fcaptura" placeholder="AAAA-MM-DD" required="">
+          <p class="help-block">Fecha en que se registra el expediente.</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="fprevaloracion" class="control-label col-sm-2">Fecha de Prevaloración</label>
+        <div class="col-md-2">
+          <input type="date" class="form-control" id="fprevaloracion" placeholder="aaaa/mm/dd" required="">
+          <p class="help-block">Fecha en que se otorgó la Prevaloración</p>
+        </div>
+      </div>
+      <!-- Fuel UX Radios Inline http://getfuelux.com/javascript.html#radio-examples-inline -->
+      <div class="form-group">
+        <label for="rango" class="control-label col-sm-2">Rango socioeconómico</label>
+        <div class="radio col-md-6 required ">
+          <label class="radio-custom radio-inline" data-initialize="radio" id="rango-0">
+            <input class="sr-only" name="rango" type="radio" value="A"> <span class="radio-label">A</span> </label>
+          <label class="radio-custom radio-inline" data-initialize="radio" id="rango-1">
+            <input class="sr-only" name="rango" type="radio" value="B"> <span class="radio-label">B</span> </label>
+          <label class="radio-custom radio-inline" data-initialize="radio" id="rango-2">
+            <input class="sr-only" name="rango" type="radio" value="C"> <span class="radio-label">C</span> </label>
+          <label class="radio-custom radio-inline" data-initialize="radio" id="rango-3">
+            <input class="sr-only" name="rango" type="radio" value="D"> <span class="radio-label">D</span> </label>
+          <label class="radio-custom radio-inline" data-initialize="radio" id="rango-4">
+            <input class="sr-only" name="rango" type="radio" value="E"> <span class="radio-label">E</span> </label>
+          <p class="help-block">Rango asignado.</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="enviado" class="control-label col-sm-2">Institución de referencia</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="enviado" placeholder="¿Quién refiere al paciente al CREE?" required=""> </div>
+      </div>
+      <!--------------------------------------------------- SEPARATOR ------------------------------------------------------------------>
+      <div class="separator">
+        <p></p>
+      </div>
+      <!--------------------------------------------------- SEPARATOR ------------------------------------------------------------------>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="nombre" class="control-label col-sm-2">Nombre</label>
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" required="">
+          <p class="help-block">Nombre completo en MAYUSCULAS y sin acentos.</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="fnacimiento" class="control-label col-sm-2">Fecha de nacimiento</label>
+        <div class="col-md-2">
+          <input type="date" class="form-control" id="fnacimiento" placeholder="" required=""> </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="curp" class="control-label col-sm-2">CURP</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="curp" placeholder="Clave Única de Registro de Población" required="">
+          <p class="help-block">Especifique.</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="edad" class="control-label col-sm-2">Edad</label>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="edad" placeholder="Edad del paciente" required=""> </div>
+      </div>
+      <!-- Fuel UX Radios Inline http://getfuelux.com/javascript.html#radio-examples-inline -->
+      <div class="form-group">
+        <label for="een" class="control-label col-sm-2">En</label>
+        <div class="radio col-md-6 required ">
+          <label class="radio-custom radio-inline" data-initialize="radio" id="een-0">
+            <input class="sr-only" name="een" type="radio" value="Años"> <span class="radio-label">Años</span> </label>
+          <label class="radio-custom radio-inline" data-initialize="radio" id="een-1">
+            <input class="sr-only" name="een" type="radio" value="Meses"> <span class="radio-label">Meses</span> </label>
+          <p class="help-block">Especifique</p>
+        </div>
+      </div>
+      <!-- Fuel UX Radios Inline http://getfuelux.com/javascript.html#radio-examples-inline -->
+      <div class="form-group">
+        <label for="sexo" class="control-label col-sm-2">Sexo</label>
+        <div class="radio col-md-6 required ">
+          <label class="radio-custom radio-inline" data-initialize="radio" id="sexo-0">
+            <input class="sr-only" name="sexo" type="radio" value="Hombre"> <span class="radio-label">Hombre</span> </label>
+          <label class="radio-custom radio-inline" data-initialize="radio" id="sexo-1">
+            <input class="sr-only" name="sexo" type="radio" value="Mujer"> <span class="radio-label">Mujer</span> </label>
+        </div>
+      </div>
+      <!-- Fuel UX Radios Inline http://getfuelux.com/javascript.html#radio-examples-inline -->
+      <div class="form-group">
+        <label for="ecivil" class="control-label col-sm-2">Estado civil</label>
+        <div class="radio col-md-6 required ">
+          <label class="radio-custom radio-inline" data-initialize="radio" id="ecivil-0">
+            <input class="sr-only" name="ecivil" type="radio" value="Soltero(a)"> <span class="radio-label">Soltero(a)</span> </label>
+          <label class="radio-custom radio-inline" data-initialize="radio" id="ecivil-1">
+            <input class="sr-only" name="ecivil" type="radio" value="Casado(a)"> <span class="radio-label">Casado(a)</span> </label>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="ocupacion" class="control-label col-sm-2">Ocupación</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="ocupacion" placeholder="Ocupación o profesión del paciente" required=""> </div>
+      </div>
+      <!-- Fuel UX Select http://getfuelux.com/javascript.html#selectlist -->
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="escolar">Escolaridad</label>
+        <div class="controls text-right col-md-1">
+          <div class="btn-group selectlist" data-initialize="selectlist" data-resize="auto" id="escolar">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button" required=""> <span class="selected-label">&nbsp;</span> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+            <ul class="dropdown-menu" role="menu">
+              <li data-value="Sin escolaridad"><a href="#">Sin escolaridad</a></li>
+              <li data-value="Preescolar"><a href="#">Preescolar</a></li>
+              <li data-value="Primaria NO terminada"><a href="#">Primaria NO terminada</a></li>
+              <li data-value="Primaria terminada"><a href="#">Primaria terminada</a></li>
+              <li data-value="Secundaria NO terminada"><a href="#">Secundaria NO terminada</a></li>
+              <li data-value="Secundaria terminada"><a href="#">Secundaria terminada</a></li>
+              <li data-value="Preparatoria NO terminada"><a href="#">Preparatoria NO terminada</a></li>
+              <li data-value="Preparatoria terminada"><a href="#">Preparatoria terminada</a></li>
+              <li data-value="Nivel técnico NO terminado"><a href="#">Nivel técnico NO terminado</a></li>
+              <li data-value="Nivel técnico terminado"><a href="#">Nivel técnico terminado</a></li>
+              <li data-value="Licenciatura NO terminada"><a href="#">Licenciatura NO terminada</a></li>
+              <li data-value="Licenciatura terminada"><a href="#">Licenciatura terminada</a></li>
+              <li data-value="Posgrado NO terminado"><a href="#">Posgrado NO terminado</a></li>
+              <li data-value="Posgrado terminado"><a href="#">Posgrado terminado</a></li>
+            </ul>
+            <input class="hidden hidden-field" name="escolar" readonly="readonly" aria-hidden="true" type="text"> </div>
+        </div>
+      </div>
+      <!-- Fuel UX Radios Inline http://getfuelux.com/javascript.html#radio-examples-inline -->
+      <div class="form-group">
+        <label for="nacionalidad" class="control-label col-sm-2">Nacionalidad</label>
+        <div class="radio col-md-6 required ">
+          <label class="radio-custom radio-inline" data-initialize="radio" id="nacionalidad-0">
+            <input class="sr-only" name="nacionalidad" type="radio" value="Mexicana"> <span class="radio-label">Mexicana</span> </label>
+          <label class="radio-custom radio-inline" data-initialize="radio" id="nacionalidad-1">
+            <input class="sr-only" name="nacionalidad" type="radio" value="Extranjero"> <span class="radio-label">Extranjero</span> </label>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="entidadnac" class="control-label col-sm-2">Entidad de nacimiento</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="entidadnac" placeholder="Entidad" required="">
+          <p class="help-block">Si es extranjero, especifique el país.</p>
+        </div>
+      </div>
+      <!--------------------------------------------------- SEPARATOR ------------------------------------------------------------------>
+      <div class="separator">
+        <p></p>
+      </div>
+      <!--------------------------------------------------- SEPARATOR ------------------------------------------------------------------>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="telefono" class="control-label col-sm-2">Teléfono</label>
+        <div class="col-md-2">
+          <input type="text" class="form-control" id="telefono" placeholder="Incluir LADA" required="">
+          <p class="help-block">Teléfono a 10 dígitos</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="calle" class="control-label col-sm-2">Calle</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="calle" placeholder="Tipo y nombre de la vialidad" required="">
+          <p class="help-block">Ej: Calle Morelos; Avenida México; Privada Zapata.</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group form-group-sm">
+        <label for="ninterior" class="control-label col-sm-2"># interior</label>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="ninterior" placeholder="Número interior del domicilio">
+          <p class="help-block">Donde aplique.</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group form-group-sm">
+        <label for="nexterior" class="control-label col-sm-2"># exterior</label>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="nexterior" placeholder="Número exterior del domicilio" required="">
+          <p class="help-block">Si no existe, complete con "SN"</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="cp" class="control-label col-sm-2">Código Postal</label>
+        <div class="col-md-2">
+          <input type="text" class="form-control" id="cp" placeholder="" required="">
+          <p class="help-block">5 dígitos.</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="colonia" class="control-label col-sm-2">Colonia</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="colonia" placeholder="Tipo y nombre del asentamiento" required="">
+          <p class="help-block">Ej: Colonia Morelos; Fraccionamiento Jacarandas; Residencial Las Palomas.</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="entidad" class="control-label col-sm-2">Estado</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="entidad" placeholder="Entidad federativa del domicilio" required=""> </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="municipio" class="control-label col-sm-2">Municipio</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="municipio" placeholder="Municipio del domicilio" required=""> </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="localidad" class="control-label col-sm-2">Localidad</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="localidad" placeholder="Comunidad o localidad del domicilio" required=""> </div>
+      </div>
+      <!--------------------------------------------------- SEPARATOR ------------------------------------------------------------------>
+      <div class="separator">
+        <p></p>
+      </div>
+      <!--------------------------------------------------- SEPARATOR ------------------------------------------------------------------>
+      <!-- Fuel UX Checkboxes http://getfuelux.com/javascript.html#checkbox -->
+      <div class="form-group">
+        <label for="servicios" class="control-label col-sm-2">Servicios de Interconsulta</label>
+        <div class=" col-md-6 required">
+          <div class="checkbox">
+            <label class="checkbox-custom" data-initialize="checkbox" id="servicios-0">
+              <input class="sr-only" name="servicios" type="checkbox" value="Medicina de Rehabilitación"> <span class="checkbox-label">Medicina de Rehabilitación</span> </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-custom" data-initialize="checkbox" id="servicios-1">
+              <input class="sr-only" name="servicios" type="checkbox" value="Comunicación Humana"> <span class="checkbox-label">Comunicación Humana</span> </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-custom" data-initialize="checkbox" id="servicios-2">
+              <input class="sr-only" name="servicios" type="checkbox" value="Traumatología y Ortopedia"> <span class="checkbox-label">Traumatología y Ortopedia</span> </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-custom" data-initialize="checkbox" id="servicios-3">
+              <input class="sr-only" name="servicios" type="checkbox" value="Neuropediatría"> <span class="checkbox-label">Neuropediatría</span> </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-custom" data-initialize="checkbox" id="servicios-4">
+              <input class="sr-only" name="servicios" type="checkbox" value="Genética"> <span class="checkbox-label">Genética</span> </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-custom" data-initialize="checkbox" id="servicios-5">
+              <input class="sr-only" name="servicios" type="checkbox" value="Oftalmología"> <span class="checkbox-label">Oftalmología</span> </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-custom" data-initialize="checkbox" id="servicios-6">
+              <input class="sr-only" name="servicios" type="checkbox" value="Psicología"> <span class="checkbox-label">Psicología</span> </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-custom" data-initialize="checkbox" id="servicios-7">
+              <input class="sr-only" name="servicios" type="checkbox" value="Radiología"> <span class="checkbox-label">Radiología</span> </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-custom" data-initialize="checkbox" id="servicios-8">
+              <input class="sr-only" name="servicios" type="checkbox" value="Pedagogía"> <span class="checkbox-label">Pedagogía</span> </label>
+          </div>
+          <p class="help-block">Especifique todos los servicios recibidos al momento.</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="fconsulta" class="control-label col-sm-2">Fecha de Consulta</label>
+        <div class="col-md-2">
+          <input type="date" class="form-control" id="fconsulta" placeholder="" required="">
+          <p class="help-block">Especifique la fecha en que recibió su primera Consulta Médica</p>
+        </div>
+      </div>
+      <!-- Text input http://getbootstrap.com/css/#forms -->
+      <div class="form-group">
+        <label for="dx" class="control-label col-sm-2">Diagnóstico</label>
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="dx" placeholder="Clave CIE-10 + Descripción." required="">
+          <p class="help-block">Diagnóstico médico de ingreso. Ej: (M54.5) Lumbalgia</p>
+        </div>
+      </div>
+      <!-- Fuel UX Radios Inline http://getfuelux.com/javascript.html#radio-examples-inline -->
+      <div class="form-group">
+        <label for="discapacidad" class="control-label col-sm-2">¿El paciente presenta discapacidad?</label>
+        <div class="radio col-md-6 required ">
+          <label class="radio-custom radio-inline" data-initialize="radio" id="discapacidad-0">
+            <input class="sr-only" name="discapacidad" type="radio" value="Si"> <span class="radio-label">Si</span> </label>
+          <label class="radio-custom radio-inline" data-initialize="radio" id="discapacidad-1">
+            <input class="sr-only" name="discapacidad" type="radio" value="No"> <span class="radio-label">No</span> </label>
+        </div>
+      </div>
+      <!-- Fuel UX Radios http://getfuelux.com/javascript.html#radio -->
+      <div class="form-group">
+        <label for="dtemporal" class="control-label col-sm-2">Temporalidad de la discapacidad</label>
+        <div class=" col-md-6">
+          <div class="radio">
+            <label class="radio-custom" data-initialize="radio" id="dtemporal-0">
+              <input class="sr-only" name="dtemporal" type="radio" value="Temporal"> <span class="radio-label">Temporal</span> </label>
+          </div>
+          <div class="radio">
+            <label class="radio-custom" data-initialize="radio" id="dtemporal-1">
+              <input class="sr-only" name="dtemporal" type="radio" value="Permanente"> <span class="radio-label">Permanente</span> </label>
+          </div>
+        </div>
+      </div>
+      <!-- Fuel UX Radios http://getfuelux.com/javascript.html#radio -->
+      <div class="form-group">
+        <label for="dlimitacion" class="control-label col-sm-2">Tipo de discapacidad</label>
+        <div class=" col-md-6">
+          <div class="radio">
+            <label class="radio-custom" data-initialize="radio" id="dlimitacion-0">
+              <input class="sr-only" name="dlimitacion" type="radio" value="Ver"> <span class="radio-label">Ver</span> </label>
+          </div>
+          <div class="radio">
+            <label class="radio-custom" data-initialize="radio" id="dlimitacion-1">
+              <input class="sr-only" name="dlimitacion" type="radio" value="Hablar"> <span class="radio-label">Hablar</span> </label>
+          </div>
+          <div class="radio">
+            <label class="radio-custom" data-initialize="radio" id="dlimitacion-2">
+              <input class="sr-only" name="dlimitacion" type="radio" value="Oír"> <span class="radio-label">Oír</span> </label>
+          </div>
+          <div class="radio">
+            <label class="radio-custom" data-initialize="radio" id="dlimitacion-3">
+              <input class="sr-only" name="dlimitacion" type="radio" value="Lenguaje"> <span class="radio-label">Lenguaje</span> </label>
+          </div>
+          <div class="radio">
+            <label class="radio-custom" data-initialize="radio" id="dlimitacion-4">
+              <input class="sr-only" name="dlimitacion" type="radio" value="Motríz"> <span class="radio-label">Motríz</span> </label>
+          </div>
+          <div class="radio">
+            <label class="radio-custom" data-initialize="radio" id="dlimitacion-5">
+              <input class="sr-only" name="dlimitacion" type="radio" value="Mental"> <span class="radio-label">Mental</span> </label>
+          </div>
+          <div class="radio">
+            <label class="radio-custom" data-initialize="radio" id="dlimitacion-6">
+              <input class="sr-only" name="dlimitacion" type="radio" value="Múltiples y Otras"> <span class="radio-label">Múltiples y Otras</span> </label>
+          </div>
+          <p class="help-block">Especifique la discapacidad principal.</p>
+        </div>
+      </div>
+      <!-- Button http://getbootstrap.com/css/#buttons -->
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="enviar"></label>
+        <div class="text-right col-md-6">
+          <button type="submit" id="enviar" name="enviar" class="btn btn-primary" aria-label="">Registrar</button>
+          <p class="help-block">Registrar expediente</p>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>

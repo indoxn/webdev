@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <h2>Registro de expedientes</h2>
+  <form action="./includes/test.php" method="post">
+    <div class="input-field">
+      <label for="expediente">Expediente</label>
+      <input type="text" name="expediente" minlength="7" maxlength="7" required> </div>
+    <div class="date-field">
+      <label for="fcaptura">Fecha de captura</label>
+      <input type="date" name="fcaptura" required> </div>
+    <div class="date-field">
+      <label for="fprevaloracion">Fecha de Prevaloración</label>
+      <input type="date" name="fprevaloracion" required> </div>
+    <div class="input-field">
+      <label>Rango socioeconomico</label>
+      <label for="rango-1">A</label>
+      <input type="radio" name="rango" id="rango-1" required value="A">
+      <label for="rango-2">B</label>
+      <input type="radio" name="rango" id="rango-2" required value="B">
+      <label for="rango-3">C</label>
+      <input type="radio" name="rango" id="rango-3" required value="C">
+      <label for="rango-4">D</label>
+      <input type="radio" name="rango" id="rango-4" required value="D">
+      <label for="rango-5">E</label>
+      <input type="radio" name="rango" id="rango-5" required value="E"> </div>
+    <div class="input-field">
+      <label for="enviado">Institución de referencia</label>
+      <input type="text" name="enviado" required> </div>
+    <!------------------------------ NAME COMPOSITE ----------------------------------------->
+    <div class="input-field">
+      <div class="pname">
+        <label for="name-1">Nombre(s)</label>
+        <input type="text" name="name_1" required> </div>
+      <div class="pname">
+        <label for="name-2">Apellido paterno</label>
+        <input type="text" name="name_2" required> </div>
+      <div class="pname">
+        <label for="name-3">Apellido materno</label>
+        <input type="text" name="name_3" required> </div>
+    </div>
+    <!------------------------------------------------------------------------------------------>
+    <div class="date-field">
+      <label for="fnacimiento">Fecha de nacimiento</label>
+      <input type="date" name="fnacimiento" required> </div>
+    <!------------------------------ CURP COMPOSITE ----------------------------------------->
+    <div class="input-field">
+      <div class="curp">
+        <label for="curp_1">Campo 1</label>
+        <input type="text" name="curp_1" required minlength="4" maxlength="4"> </div>
+      <div class="curp">
+        <label for="curp_2">Campo 2</label>
+        <input type="text" name="curp_2" required minlength="6" maxlength="6"> </div>
+      <div class="curp">
+        <label for="curp_3">Campo 3</label>
+        <input type="text" name="curp_3" required minlength="6" maxlength="6"> </div>
+      <div class="curp">
+        <label for="curp_4">Campo 4</label>
+        <input type="text" name="curp_4" required minlength="2" maxlength="2"> </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------->
+    <div class="input-field">
+      <label for="edad">Edad</label>
+      <input type="text" name="edad" required maxlength="2" required> </div>
+    <div class="input-field">
+      <label for="een">En</label>
+      <label for="een-1">Años</label>
+      <input type="radio" name="een" id="een-1" required value="Años">
+      <label for="een-2">Meses</label>
+      <input type="radio" name="een" id="een-2" required value="Meses"> </div>
+    <div class="input-field">
+      <label for="sexo">Sexo</label>
+      <label for="sexo-1">Hombre</label>
+      <input type="radio" name="sexo" id="sexo-1" required value="Hombre">
+      <label for="sexo-2">Mujer</label>
+      <input type="radio" name="sexo" id="sexo-2" required value="Mujer"> </div>
+    <div class="input-fiel">
+      <label for="ecivil">Estado civil</label>
+      <label for="ecivil-1">Soltero(a)</label>
+      <input type="radio" name="ecivil" id="ecivil-1" required value="Soltero(a)">
+      <label for="ecivil-2">Casado(a)</label>
+      <input type="radio" name="ecivil" id="ecivil-2" required value="Casado(a)"> </div>
+    <div class="input-field">
+      <label for="ocupacion">Ocupación</label>
+      <input type="text" name="ocupacion" required> </div>
+    <div class="input-field">
+      <label for="escolar">Escolaridad</label>
+      <select name="escolar" required>
+        <option value="Sin escolaridad">Sin escolaridad</option>
+        <option value="Preescolar">Preescolar</option>
+        <option value="Primaria NO terminada">Primaria NO terminada</option>
+        <option value="Primaria terminada">Primaria terminada</option>
+        <option value="Secundaria NO terminada">Secundaria NO terminada</option>
+        <option value="Secundaria terminada">Secundaria terminada</option>
+        <option value="Bachillerato NO terminada">Bachillerato NO terminado</option>
+        <option value="Bachillerato terminada">Bachillerato terminado</option>
+        <option value="Nivel técnico NO terminado">Nivel técnico NO terminado</option>
+        <option value="Nivel técnico terminado">Nivel técnico terminado</option>
+        <option value="Licenciatura NO terminada">Licenciatura NO terminada</option>
+        <option value="Licenciatura terminada">Licenciatura terminada</option>
+        <option value="Posgrado NO terminado">Posgrado NO terminado</option>
+        <option value="Posgrado terminado">Posgrado terminado</option>
+      </select>
+    </div>
+    <div class="input-field">
+      <label for="nacionalidad">Nacionalidad</label>
+      <label for="nacional-1">Mexicana</label>
+      <input type="radio" name="nacionalidad" id="nacional-1" required value="Mexicana">
+      <label for="nacional-2">Extranjero</label>
+      <input type="radio" name="nacionalidad" id="nacional-2" required value="Extranjero"> </div>
+    <div class="input-field">
+      <label for="entidadnac">Entidad de nacimiento</label>
+      <input type="text" name="entidadnac" required> </div>
+    <div class="input-field">
+      <label for="telefono">Teléfono</label>
+      <input type="text" name="telefono" minlength="10" maxlength="10" required> </div>
+    <!------------------------------      GEOREFERENCE       ----------------------------------------->
+    <div class="input-field">
+      <label for="tvial">Tipo de vialidad</label>
+      <input type="text" name="tvial" required> </div>
+    <div class="input-field">
+      <label for="nvial">Nombre de la vialidad</label>
+      <input type="text" name="nvial" required> </div>
+    <div class="input-field">
+      <label for="ninterior">No. interior</label>
+      <input type="text" name="ninterior"> </div>
+    <div class="input-field">
+      <label for="nexterior">No. exterior</label>
+      <input type="text" name="nexterior" required> </div>
+    <div class="input-field">
+      <label for="cp">Código postal</label>
+      <input type="text" name="cp" minlength="5" maxlength="5" required> </div>
+    <div class="input-field">
+      <label for="tasenta">Tipo de asentamiento</label>
+      <input type="text" name="tasenta" required> </div>
+    <div class="input-field">
+      <label for="nasenta">Nombre del asentamiento</label>
+      <input type="text" name="nasenta" required> </div>
+    <div class="input-field">
+      <label for="localidad">Localidad</label>
+      <input type="text" name="localidad" required> </div>
+    <div class="input-field">
+      <label for="municipio">Municipio</label>
+      <input type="text" name="municipio" required> </div>
+    <div class="input-field">
+      <label for="entidad">Entidad Federativa</label>
+      <input type="text" name="entidad" required> </div>
+    <!------------------------------      CLINICAL       ----------------------------------------->
+    <div class="input-field">
+      <label for="servicio">Servicios de interconsulta otorgados</label>
+      <div class="checkbox">
+        <label for="s_mr">Medicina de rehabilitación</label>
+        <input type="checkbox" name="cbox1" id="s_mr" value="Medicina de rehabilitación"> 
+      </div>
+      <div class="checkbox">
+        <label for="s_tyo">Traumatología y Ortpedia</label>
+        <input type="checkbox" name="cbox2" id="s_tyo" value="Traumatología y Ortopedia">
+      </div>
+    </div>
+    <!------------------------------      BUTTONS        ----------------------------------------->
+    <div class="submit">
+      <input type="submit" name="registrar" value="Registrar"> </div>
+    <div class="reset">
+      <input type="reset" name="reset" value="Limpiar campos"> </div>
+  </form>
+</body>
+
+</html>

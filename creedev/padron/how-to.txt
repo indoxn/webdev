@@ -1,0 +1,4 @@
+1.- Copy 'padron' to /var/www/html
+2.- Import MySQL Database as pdb_ct.pdb
+3.- Create MySQL user 'padron' and grant all privileges on pdb_ct.*
+4.- Access page
