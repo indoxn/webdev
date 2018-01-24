@@ -3,13 +3,62 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <!--  Vendor -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!--  <link rel="stylesheet" href="vendor/Normalize.css">-->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--  Custom -->
   <title>Forms | UBR</title>
 </head>
 
 <body>
-  <h1>Registro de personal en UBR</h1>
-  <p>En desarrollo</p>
+  <div class="container">
+    <h2>Registro de Personal en UBRs</h2>
+  </div>
+
+  <form>
+<!--    Personal information-->
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-3 form-group">
+          <label for="fname">Nombre(s)</label>
+          <input type="text" class="form-control" id="fname" placeholder="Nombre(s)">
+        </div>
+        <div class="col-sm-3 form-group">
+          <label for="lname1">Primer apellido</label>
+          <input type="text" class="form-control" id="lname1" placeholder="Primer apellido">
+        </div>
+        <div class="col-sm-3 form-group">
+          <label for="lname2">Segundo apellido</label>
+          <input type="text" class="form-control" id="lname2" placeholder="Segundo apellido">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 form-group">
+          <label for="age">Edad</label>
+          <input type="text" class="form-control" id="age" placeholder="Edad">
+        </div>
+        <div class="col-sm-4 form-group">
+          <legend>Sexo</legend>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="gender" id="male" value="Hombre">
+              Hombre
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="gender" id="female" value="Mujer">
+              Mujer
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
 
 </body>
 
