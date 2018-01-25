@@ -1,0 +1,11 @@
+body {
+  background-color: #eee;
+}
+
+*[role="form"] {
+  background-color: #fff;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: .3em;
+}
