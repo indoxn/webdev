@@ -9,3 +9,19 @@ body {
   padding: 15px;
   border-radius: .3em;
 }
+
+/*
+#section {
+  border-style: solid;
+  border-color: blueviolet;
+}
+*/
+
+legend {
+  border-style: hidden;
+  border-width: 1px;
+  border-radius: .1em;
+  border-color: #7f8c8d;
+  padding: 10px;
+  background-color: #ecf0f1;
+}

@@ -21,8 +21,10 @@
 		<h2>Registro de Personal en UBRs</h2>
 	</div>
 
-		<!--    Personal information-->
+
 		<div class="container">
+<!--    Personal information-->
+      <div id="section">
 			<div class="row">
 				<legend>Información Personal</legend>
 				<div class="col-sm-4 form-group">
@@ -48,12 +50,13 @@
 						<label for="sex">Sexo</label>
 						<select class="custom-select" id="sex">
               <option selected disabled>Sexo</option>
-              <option>Hombre</option>
-              <option>Mujer</option>
+              <option value="Hombre">Hombre</option>
+              <option value="Mujer">Mujer</option>
             </select>
 					</div>
 				</div>
 			</div>
+    </div>
 			<!--  Academic info-->
 			<div class="row">
 				<legend>Formación Académica</legend>
@@ -89,54 +92,55 @@
 					<input type="text" class="form-control" id="school" placeholder="¿En donde completó sus estudios?">
 				</div>
 			</div>
+<!--  Work info-->
 			<div class="row">
 				<legend>Información Laboral</legend>
 				<div class="col-sm-4 form-group">
 					<label for="ubr">Unidad Básica de Rehabilitación</label>
 					<select class="custom-select" id="ubr">
             <option selected disabled>Seleccione su UBR</option>
-            <option>Acaponeta</option>
-            <option>Ahuacatlán</option>
-            <option>Amatlán de Cañas</option>
-            <option>Bahía de Banderas</option>
-            <option>Compostela</option>
-            <option>El Nayar</option>
-            <option>Huajicori</option>
-            <option>Ixtlán del Río</option>
-            <option>Jala</option>
-            <option>La Yesca</option>
-            <option>Las Varas</option>
-            <option>Rosamorada</option>
-            <option>Ruíz</option>
-            <option>San Blas</option>
-            <option>San Pedro Lagunillas</option>
-            <option>Santa María del Oro</option>
-            <option>Santiago Ixcuintla</option>
-            <option>Tecuala</option>
-            <option>Tepic</option>
-            <option>Tuxpan</option>
-            <option>Villa Hidalgo</option>
-            <option>Xalisco</option>
+            <option value="Acaponeta">Acaponeta</option>
+            <option value="Ahuacatlán">Ahuacatlán</option>
+            <option value="Amatlán de Cañas">Amatlán de Cañas</option>
+            <option value="Bahía de Banderas">Bahía de Banderas</option>
+            <option value="Compostela">Compostela</option>
+            <option value="El Nayar">El Nayar</option>
+            <option value="Huajicori">Huajicori</option>
+            <option value="Ixltán del Río">Ixtlán del Río</option>
+            <option value="Jala">Jala</option>
+            <option value="La Yesca">La Yesca</option>
+            <option value="Las Varas">Las Varas</option>
+            <option value="Rosamorada">Rosamorada</option>
+            <option value="Ruíz">Ruíz</option>
+            <option value="San Blas">San Blas</option>
+            <option value="San Pedro Lagunillas">San Pedro Lagunillas</option>
+            <option value="Santa María del Oro">Santa María del Oro</option>
+            <option value="Santiago Ixcuintla">Santiago Ixcuintla</option>
+            <option value="Tecuala">Tecuala</option>
+            <option value="Tepic">Tepic</option>
+            <option value="Tuxpan">Tuxpan</option>
+            <option value="Villa Hidalgo">Villa Hidalgo</option>
+            <option value="Xalisco">Xalisco</option>
           </select>
 				</div>
 				<div class="col-sm-4 form-group">
 					<label for="title">Puesto que desempeña</label>
 					<select class="custom-select" id="title">
             <option selected disabled>Especifique su puesto en la UBR</option>
-            <option>Encargado</option>
-            <option>Personal médico/paramédico</option>
-            <option>Administrativo</option>
-            <option>Pasante/practicante</option>
-            <option>Voluntario</option>
+            <option value="Encargado">Encargado</option>
+            <option value="Operativo">Personal médico/paramédico</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Pasante">Pasante/practicante</option>
+            <option value="Voluntario">Voluntario</option>
           </select>
 				</div>
 				<div class="col-sm-3 form-group">
 					<label for="jobtype">Situación laboral</label>
 					<select class="custom-select" id="jobtype">
-            <option>Base</option>
-            <option>Contrato</option>
-            <option>Confianza</option>
-            <option>Otro</option>
+            <option value="Base">Base</option>
+            <option value="Contrato">Contrato</option>
+            <option value="Confianza">Confianza</option>
+            <option value="Otro">Otro</option>
           </select>
 				</div>
 			</div>
@@ -147,34 +151,35 @@
           <small class="form-text text-muted" id="jobdateHelp">Fecha aproximada</small>
 				</div>
 			</div>
+<!--      Georreference-->
 			<div class="row">
 				<legend>Georreferencia</legend>
 				<div class="col-sm-3 form-group">
 					<label for="tvial">Tipo de vialidad</label>
 					<select class="custom-select" id="tvial">
             <option selected disabled>Clasificación de la vialidad</option>
-            <option>Ampliación</option>
-            <option>Andador</option>
-            <option>Avenida</option>
-            <option>Boulevard</option>
-            <option>Calle</option>
-            <option>Callejón</option>
-            <option>Calzada</option>
-            <option>Cerrada</option>
-            <option>Circuito</option>
-            <option>Circunvalación</option>
-            <option>Continuación</option>
-            <option>Corredor</option>
-            <option>Diagonal</option>
-            <option>Eje vial</option>
-            <option>Pasaje</option>
-            <option>Peatonal</option>
-            <option>Periférico</option>
-            <option>Privada</option>
-            <option>Prolongación</option>
-            <option>Retorno</option>
-            <option>Viaducto</option>
-            <option>Pasaje</option>
+            <option value="Ampliación">Ampliación</option>
+            <option value="Andador">Andador</option>
+            <option value="Avenida">Avenida</option>
+            <option value="Boulevard">Boulevard</option>
+            <option value="Calle">Calle</option>
+            <option value="Callejón">Callejón</option>
+            <option value="Calzada">Calzada</option>
+            <option value="Cerrada">Cerrada</option>
+            <option value="Circuito">Circuito</option>
+            <option value="Circunvalación">Circunvalación</option>
+            <option value="Continuación">Continuación</option>
+            <option value="Corredor">Corredor</option>
+            <option value="Diagonal">Diagonal</option>
+            <option value="Eje vial">Eje vial</option>
+            <option value="Pasaje">Pasaje</option>
+            <option value="Peatonal">Peatonal</option>
+            <option value="Periférico">Periférico</option>
+            <option value="Privada">Privada</option>
+            <option value="Prolongación">Prolongación</option>
+            <option value="Retorno">Retorno</option>
+            <option value="Viaducto">Viaducto</option>
+            <option value="Pasaje">Pasaje</option>
           </select>
 				</div>
 				<div class="col-sm-4 form-group">
@@ -195,47 +200,47 @@
 					<label for="tasent">Tipo de asentamiento</label>
 					<select class="custom-select" id="tasent">
             <option selected disabled>Clasificación del asentamiento</option>
-            <option>Aeropuerto</option>
-            <option>Ampliación</option>
-            <option>Barrio</option>
-            <option>Cantón</option>
-            <option>Ciudad</option>
-            <option>Ciudad Industrial</option>
-            <option>Colonia</option>
-            <option>Condominio</option>
-            <option>Conjunto Habitacional</option>
-            <option>Corredor Industrial</option>
-            <option>Coto</option>
-            <option>Cuartel</option>
-            <option>Ejido</option>
-            <option>Exhacienda</option>
-            <option>Fracción</option>
-            <option>Fraccionamiento</option>
-            <option>Granja</option>
-            <option>Hacienda</option>
-            <option>Ingenio</option>
-            <option>Manzana</option>
-            <option>Paraje</option>
-            <option>Parque Industrial</option>
-            <option>Privada</option>
-            <option>Prolongación</option>
-            <option>Pueblo</option>
-            <option>Puerto</option>
-            <option>Ranchería</option>
-            <option>Rancho</option>
-            <option>Región</option>
-            <option>Residencial</option>
-            <option>Rinconada</option>
-            <option>Sección</option>
-            <option>Sector</option>
-            <option>Supermanzana</option>
-            <option>Unidad</option>
-            <option>Unidad Habitacional</option>
-            <option>Villa</option>
-            <option>Zona Federal</option>
-            <option>Zona Industrial</option>
-            <option>Zona Militar</option>
-            <option>Zona Naval</option>
+            <option value="Aeropuerto">Aeropuerto</option>
+            <option value="Ampliación">Ampliación</option>
+            <option value="Barrio">Barrio</option>
+            <option value="Cantón">Cantón</option>
+            <option value="Ciudad">Ciudad</option>
+            <option value="Ciudad Industrial">Ciudad Industrial</option>
+            <option value="Colonia">Colonia</option>
+            <option value="Condominio">Condominio</option>
+            <option value="Conjunto Habitacional">Conjunto Habitacional</option>
+            <option value="Corredor Industrial">Corredor Industrial</option>
+            <option value="Coto">Coto</option>
+            <option value="Cuartel">Cuartel</option>
+            <option value="Ejido">Ejido</option>
+            <option value="Exhacienda">Exhacienda</option>
+            <option value="Fracción">Fracción</option>
+            <option value="Fraccionamiento">Fraccionamiento</option>
+            <option value="Granja">Granja</option>
+            <option value="Hacienda">Hacienda</option>
+            <option value="Ingenio">Ingenio</option>
+            <option value="Manzana">Manzana</option>
+            <option value="Paraje">Paraje</option>
+            <option value="Parque Industrial">Parque Industrial</option>
+            <option value="Privada">Privada</option>
+            <option value="Prolongación">Prolongación</option>
+            <option value="Pueblo">Pueblo</option>
+            <option value="Puerto">Puerto</option>
+            <option value="Ranchería">Ranchería</option>
+            <option value="Rancho">Rancho</option>
+            <option value="Región">Región</option>
+            <option value="Residencial">Residencial</option>
+            <option value="Rinconada">Rinconada</option>
+            <option value="Sección">Sección</option>
+            <option value="Sector">Sector</option>
+            <option value="Supermanzana">Supermanzana</option>
+            <option value="Unidad">Unidad</option>
+            <option value="Unidad Habitacional">Unidad Habitacional</option>
+            <option value="Villa">Villa</option>
+            <option value="Zona Federal">Zona Federal</option>
+            <option value="Zona Industrial">Zona Industrial</option>
+            <option value="Zona Militar">Zona Militar</option>
+            <option value="Zona Naval">Zona Naval</option>
           </select>
 				</div>
 				<div class="col-sm-4 form-group">
@@ -256,29 +261,30 @@
 					<label for="municipio">Municipio</label>
 					<select class="custom-select" id="municipio">
             <option selected disabled>Seleccione el muncipio</option>
-            <option>Acaponeta</option>
-            <option>Ahuacatlán</option>
-            <option>Amatlán de Cañas</option>
-            <option>Bahía de Banderas</option>
-            <option>Compostela</option>
-            <option>El Nayar</option>
-            <option>Huajicori</option>
-            <option>Ixtlán del Río</option>
-            <option>Jala</option>
-            <option>La Yesca</option>
-            <option>Rosamorada</option>
-            <option>Ruíz</option>
-            <option>San Blas</option>
-            <option>San Pedro Lagunillas</option>
-            <option>Santa María del Oro</option>
-            <option>Santiago Ixcuintla</option>
-            <option>Tecuala</option>
-            <option>Tepic</option>
-            <option>Tuxpan</option>
-            <option>Xalisco</option>
+            <option value="Acaponeta">Acaponeta</option>
+            <option value="Ahuacatlán">Ahuacatlán</option>
+            <option value="Amatlán de Cañas">Amatlán de Cañas</option>
+            <option value="Bahía de Banderas">Bahía de Banderas</option>
+            <option value="Compostela">Compostela</option>
+            <option value="El Nayar">El Nayar</option>
+            <option value="Huajicori">Huajicori</option>
+            <option value="Ixtlán del Río">Ixtlán del Río</option>
+            <option value="Jala">Jala</option>
+            <option value="La Yesca">La Yesca</option>
+            <option value="Rosamorada">Rosamorada</option>
+            <option value="Ruíz">Ruíz</option>
+            <option value="San Blas">San Blas</option>
+            <option value="San Pedro Lagunillas">San Pedro Lagunillas</option>
+            <option value="Santa María del Oro">Santa María del Oro</option>
+            <option value="Santiago Ixcuintla">Santiago Ixcuintla</option>
+            <option value="Tecuala">Tecuala</option>
+            <option value="Tepic">Tepic</option>
+            <option value="Tuxpan">Tuxpan</option>
+            <option value="Xalisco">Xalisco</option>
           </select>
 				</div>
 			</div>
+<!--      Contact info-->
 			<div class="row">
 				<legend>Información de Contacto</legend>
 				<div class="col-sm-3 form-group">
@@ -296,15 +302,16 @@
 					<small class="form-text text-muted" id="phonepersonalHelp">LADA + Número (10 dígitos)</small>
 				</div>
 				<div class="col-sm-3 form-group">
-					<label for="email">Corre electrónico</label>
-					<input type="email" class="form-control" id="email" placeholder="Email de trabajo">
+					<label for="emailubr">Corre electrónico</label>
+					<input type="email" class="form-control" id="emailubr" placeholder="Email de trabajo">
 				</div>
 			</div>
+<!--      Additional info-->
 			<div class="row">
 				<legend>Información Adicional</legend>
 				<div class="col-sm-5 form-group">
-					<label for="predif">Presidenta</label>
-					<input type="text" class="form-control" id="predif" placeholder="Presidenta del DIF Municipal">
+					<label for="presdif">Presidenta</label>
+					<input type="text" class="form-control" id="presdif" placeholder="Presidenta del DIF Municipal">
 				</div>
 				<div class="col-sm-5 form-group">
 					<label for="dirdif">Directora</label>

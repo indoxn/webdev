@@ -1,0 +1,37 @@
+CREATE DATABASE IF NOT EXISTS `forms` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `forms`;
+
+CREATE TABLE IF NOT EXISTS `ubr` (
+  `ubr_id` INT AUTO_INCREMENT PRIMARY KEY,
+  `fname` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `lname1` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `lname2` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `age` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sex` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `academic` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `diploma` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `profesion` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `school` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ubr` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `jobtype` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `jobdate` date DEFAULT NULL,
+  `tvial` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `nvial` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `nextvial` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `nintvial` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `tasent` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `nasent` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `cpostal` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `localidad` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `municipio` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `phoneubr` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `phonextubr` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `phonepersonal` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `emailubr` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `presdif` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `dirdif` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `phonedif` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+  `emaildif` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
