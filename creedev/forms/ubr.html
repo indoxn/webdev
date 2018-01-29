@@ -27,26 +27,26 @@
 				<legend>Información Personal</legend>
 				<div class="col-sm-4 form-group">
 					<label for="fname">Nombre(s)</label>
-					<input type="text" class="form-control" id="fname" placeholder="Nombre(s)">
+					<input type="text" class="form-control" id="fname" name="fname" placeholder="Nombre(s)">
 				</div>
 				<div class="col-sm-4 form-group">
 					<label for="lname1">Primer apellido</label>
-					<input type="text" class="form-control" id="lname1" placeholder="Primer apellido">
+					<input type="text" class="form-control" id="lname1" name="lname1" placeholder="Primer apellido">
 				</div>
 				<div class="col-sm-4 form-group">
 					<label for="lname2">Segundo apellido</label>
-					<input type="text" class="form-control" id="lname2" placeholder="Segundo apellido">
+					<input type="text" class="form-control" id="lname2" name="lname2" placeholder="Segundo apellido">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-2 form-group">
 					<label for="age">Edad</label>
-					<input type="text" class="form-control" id="age" placeholder="Edad">
+					<input type="text" class="form-control" id="age" name="age" placeholder="Edad">
 				</div>
 				<div>
 					<div class="col-sm-12 form-group">
 						<label for="sex">Sexo</label>
-						<select class="custom-select" id="sex">
+						<select class="custom-select" id="sex" name="sex">
               <option selected disabled>Sexo</option>
               <option value="Hombre">Hombre</option>
               <option value="Mujer">Mujer</option>
@@ -60,7 +60,7 @@
 				<legend>Formación Académica</legend>
 				<div class="col-sm-4 form-group">
 					<label for="academic">Formación Académica</label>
-					<select class="custom-select" id="academic">
+					<select class="custom-select" id="academic" name="academic">
             <option selected disabled>Último grado de estudios</option>
             <option value="Primaria">Primaria</option>
             <option value="Secundaria">Secundaria</option>
@@ -73,7 +73,7 @@
 				</div>
 				<div class="col-sm-4 form-group">
 					<label for="diploma">¿Obtuvo un título por sus estudios?</label>
-					<select class="custom-select" id="diploma">
+					<select class="custom-select" id="diploma" name="diploma">
             <option selected disabled>Especifique</option>
             <option value="Si">Si</option>
             <option value="No">No</option>
@@ -81,13 +81,13 @@
 				</div>
 				<div class="col-sm-4 form-group">
 					<label for="profesion">Profesión</label>
-					<input type="text" class="form-control" id="profesion" placeholder="Profesion o carrera estudiada">
+					<input type="text" class="form-control" id="profesion" name="profesion" placeholder="Profesion o carrera estudiada">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-4 form-group">
 					<label for="school">Institución de estudios</label>
-					<input type="text" class="form-control" id="school" placeholder="¿En donde completó sus estudios?">
+					<input type="text" class="form-control" id="school" name="school" placeholder="¿En donde completó sus estudios?">
 				</div>
 			</div>
 <!--  Work info-->
@@ -95,7 +95,7 @@
 				<legend>Información Laboral</legend>
 				<div class="col-sm-4 form-group">
 					<label for="ubr">Unidad Básica de Rehabilitación</label>
-					<select class="custom-select" id="ubr">
+					<select class="custom-select" id="ubr" name="ubr">
             <option selected disabled>Seleccione su UBR</option>
             <option value="Acaponeta">Acaponeta</option>
             <option value="Ahuacatlán">Ahuacatlán</option>
@@ -123,7 +123,7 @@
 				</div>
 				<div class="col-sm-4 form-group">
 					<label for="title">Puesto que desempeña</label>
-					<select class="custom-select" id="title">
+					<select class="custom-select" id="title" name="title">
             <option selected disabled>Especifique su puesto en la UBR</option>
             <option value="Encargado">Encargado</option>
             <option value="Operativo">Personal médico/paramédico</option>
@@ -134,7 +134,7 @@
 				</div>
 				<div class="col-sm-3 form-group">
 					<label for="jobtype">Situación laboral</label>
-					<select class="custom-select" id="jobtype">
+					<select class="custom-select" id="jobtype" name="jobtype">
             <option value="Base">Base</option>
             <option value="Contrato">Contrato</option>
             <option value="Confianza">Confianza</option>
@@ -145,7 +145,7 @@
 			<div class="row">
 				<div class="col-sm-4 form-group">
 					<label for="jobdate">Fecha en que inició a laborar en su UBR</label>
-					<input type="month" class="form-control" id="jobdate">
+					<input type="date" class="form-control" id="jobdate" name="jobdate">
           <small class="form-text text-muted" id="jobdateHelp">Fecha aproximada</small>
 				</div>
 			</div>
@@ -154,7 +154,7 @@
 				<legend>Georreferencia</legend>
 				<div class="col-sm-3 form-group">
 					<label for="tvial">Tipo de vialidad</label>
-					<select class="custom-select" id="tvial">
+					<select class="custom-select" id="tvial" name="tvial">
             <option selected disabled>Clasificación de la vialidad</option>
             <option value="Ampliación">Ampliación</option>
             <option value="Andador">Andador</option>
@@ -182,21 +182,21 @@
 				</div>
 				<div class="col-sm-4 form-group">
 					<label for="nvial">Nombre de la vialidad</label>
-					<input type="text" class="form-control" id="nvial" placeholder="Especifique el nombre de la vialidad">
+					<input type="text" class="form-control" id="nvial" name="nvial" placeholder="Especifique el nombre de la vialidad">
 				</div>
 				<div class="col-sm-3 form-group">
 					<label for="nextvial">Número externo</label>
-					<input type="text" class="form-control" id="nextvial" placeholder="Número externo">
+					<input type="text" class="form-control" id="nextvial" name="nextvial" placeholder="Número externo">
 				</div>
 				<div class="col-sm-2 form-group">
 					<label for="nintvial">Número interno</label>
-					<input type="text" class="form-control" id="nintvial" placeholder="Donde aplique">
+					<input type="text" class="form-control" id="nintvial" name="nintvial" placeholder="Donde aplique">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-3 form-group">
 					<label for="tasent">Tipo de asentamiento</label>
-					<select class="custom-select" id="tasent">
+					<select class="custom-select" id="tasent" name="tasent">
             <option selected disabled>Clasificación del asentamiento</option>
             <option value="Aeropuerto">Aeropuerto</option>
             <option value="Ampliación">Ampliación</option>
@@ -243,21 +243,21 @@
 				</div>
 				<div class="col-sm-4 form-group">
 					<label for="nasent">Nombre del asentamiento</label>
-					<input type="text" class="form-control" id="nasent" placeholder="Especifique el nombre del asentamiento">
+					<input type="text" class="form-control" id="nasent" name="nasent" placeholder="Especifique el nombre del asentamiento">
 				</div>
 				<div class="col-sm-2 form-group">
 					<label for="cpostal">Código Postal</label>
-					<input type="text" class="form-control" id="cpostal" placeholder="5 dígitos">
+					<input type="text" class="form-control" id="cpostal" name="cpostal" placeholder="5 dígitos">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-3 form-group">
 					<label for="localidad">Localidad</label>
-					<input type="text" class="form-control" id="localidad" placeholder="Donde aplique">
+					<input type="text" class="form-control" id="localidad" name="localidad" placeholder="Donde aplique">
 				</div>
 				<div class="col-sm-4 form-group">
 					<label for="municipio">Municipio</label>
-					<select class="custom-select" id="municipio">
+					<select class="custom-select" id="municipio" name="municipio">
             <option selected disabled>Seleccione el muncipio</option>
             <option value="Acaponeta">Acaponeta</option>
             <option value="Ahuacatlán">Ahuacatlán</option>
@@ -287,21 +287,21 @@
 				<legend>Información de Contacto</legend>
 				<div class="col-sm-3 form-group">
 					<label for="phoneubr">Teléfono de trabajo</label>
-					<input type="text" class="form-control" id="phoneubr" placeholder="Teléfono de la UBR">
+					<input type="text" class="form-control" id="phoneubr" name="phoneubr" placeholder="Teléfono de la UBR">
 					<small class="form-text text-muted" id="phoneubrHelp">LADA + Número (10 dígitos)</small>
 				</div>
 				<div class="col-sm-2 form group">
 					<label for="phonextubr">Extensión</label>
-					<input type="text" class="form-control" id="phonextubr" placeholder="Donde aplique">
+					<input type="text" class="form-control" id="phonextubr" name="phonextubr" placeholder="Donde aplique">
 				</div>
 				<div class="col-sm-3 form-group">
 					<label for="phonepersonal">Teléfono personal</label>
-					<input type="text" class="form-control" id="phonepersonal" placeholder="Celular">
+					<input type="text" class="form-control" id="phonepersonal" name="phonepersonal" placeholder="Celular">
 					<small class="form-text text-muted" id="phonepersonalHelp">LADA + Número (10 dígitos)</small>
 				</div>
 				<div class="col-sm-3 form-group">
 					<label for="emailubr">Corre electrónico</label>
-					<input type="email" class="form-control" id="emailubr" placeholder="Email de trabajo">
+					<input type="email" class="form-control" id="emailubr"  name="emailubr"placeholder="Email de trabajo">
 				</div>
 			</div>
 <!--      Additional info-->
@@ -309,28 +309,28 @@
 				<legend>Información Adicional</legend>
 				<div class="col-sm-5 form-group">
 					<label for="presdif">Presidenta</label>
-					<input type="text" class="form-control" id="presdif" placeholder="Presidenta del DIF Municipal">
+					<input type="text" class="form-control" id="presdif" name="presdif" placeholder="Presidenta del DIF Municipal">
 				</div>
 				<div class="col-sm-5 form-group">
 					<label for="dirdif">Directora</label>
-					<input type="text" class="form-control" id="dirdif" placeholder="Director(a) del DIF Municipal">
+					<input type="text" class="form-control" id="dirdif" name="dirdif" placeholder="Director(a) del DIF Municipal">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-4 form-group">
 					<label for="phonedif">Teléfono</label>
-					<input type="text" class="form-control" id="phonedif" placeholder="Teléfono del DIF Municipal">
+					<input type="text" class="form-control" id="phonedif" name="phonedif" placeholder="Teléfono del DIF Municipal">
 					<small class="form-text text-muted" id="phonedif">LADA + Número (10 dígitos)</small>
 				</div>
 				<div class="col-sm-3 form-group">
           <label for="emaildif">Correo electrónico</label>
-          <input type="email" class="form-control" id="emaildif" placeholder="Email del DIF Municipal">
+          <input type="email" class="form-control" id="emaildif" name="emaildif" placeholder="Email del DIF Municipal">
 				</div>
 			</div>
 <!--      Reg button-->
       <div class="row">
         <div class="container">
-          <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Registrar</button>
+          <button type="submit" class="btn btn-outline-primary btn-lg btn-block" id="register" name="register">Registrar</button>
         </div>
       </div>
 		</div>
