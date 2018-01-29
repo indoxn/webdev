@@ -41,7 +41,7 @@ if (mysqli_connect_errno()) {
 }
 
 //Insert query
-$sql = "INSERT INTO ubr ('fname', 'lname1', 'lname2', 'age', 'sex', 'academic', 'diploma', 'profesion', 'school', 'ubr', 'title', 'jobtype', 'jobdate', 'tvial', 'nvial', 'nextvial', 'nintvial', 'tasent', 'nasent', 'cpostal', 'localidad', 'municipio', 'phoneubr', 'phonextubr', 'phonepersonal', 'emailubr', 'presdif', 'dirdif', 'phonedif', 'emaildif') VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,)
+$sql = "INSERT INTO ubr (`fname`, `lname1`, `lname2`, `age`, `sex`, `academic`, `diploma`, `profesion`, `school`, `ubr`, `title`, `jobtype`, `jobdate`, `tvial`, `nvial`, `nextvial`, `nintvial`, `tasent`, `nasent`, `cpostal`, `localidad`, `municipio`, `phoneubr`, `phonextubr`, `phonepersonal`, `emailubr`, `presdif`, `dirdif`, `phonedif`, `emaildif`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,)
 )";
 
   //Preparing the SQL query
