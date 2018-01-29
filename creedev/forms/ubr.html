@@ -16,12 +16,10 @@
 </head>
 
 <body>
-  <form class="form-horizontal" role="form">
+  <form class="form-horizontal" role="form" action="./includes/ubr_insert.php" method="post">
 	<div class="container">
 		<h2>Registro de Personal en UBRs</h2>
 	</div>
-
-
 		<div class="container">
 <!--    Personal information-->
       <div id="section">
@@ -329,6 +327,12 @@
           <input type="email" class="form-control" id="emaildif" placeholder="Email del DIF Municipal">
 				</div>
 			</div>
+<!--      Reg button-->
+      <div class="row">
+        <div class="container">
+          <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Registrar</button>
+        </div>
+      </div>
 		</div>
   </form>
 </body>
