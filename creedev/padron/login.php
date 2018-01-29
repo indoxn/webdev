@@ -46,7 +46,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
               //If password verified, start new session under username
               session_start();
               $_SESSION['username'] = $username;
-              header("location: index.php");
+              header("location: buscar.php");
             } else{
               //display an error message if username doesn't exist
               $password_err = 'Contraseña no válida';
